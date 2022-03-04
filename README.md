@@ -8,7 +8,6 @@ NGINX parameters
 |debug|Set to true if you would like to see extra information on logs|string|false|
 
 
-
 NGINX deployment parameters
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
@@ -33,7 +32,6 @@ NGINX deployment parameters
 |podSecurityContext.fsGroup|Set NGINX pod's Security Context fsGroup|integer|1001|
 
 
-
 Traffic Exposure parameters
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
@@ -49,7 +47,6 @@ Traffic Exposure parameters
 |ingress.path|The Path to Nginx. You may need to set this to '/*' in order to use this with ALB ingress controllers|string|/|
 |ingress.annotations|Additional annotations for the Ingress resource. To enable certificate autogeneration, place here your cert-manager annotations|string|{}|
 |ingress.tls|Create TLS Secret|string|false|
-
 
 
 Metrics parameters
