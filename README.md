@@ -2,18 +2,6 @@
 
 NGINX Open Source is a web server that can be also used as a reverse proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due to its ability to provide faster content.
 
-## Supported Providers
-
-The following tables shows the providers this package can work with.
-
-| AWS  |  Azure  | vSphere  | Docker |
-|:---:|:---:|:---:|:---:|
-| ✅  |  ✅  | ✅  | ✅  |
-
-## Components
-
-* TBD
-
 ## Configuration Reference
 
 You can configure the following:
@@ -70,9 +58,11 @@ You can configure the following:
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
 |metrics.port|NGINX Container Status Port scraped by Prometheus Exporter|string|“ “|
+|prometheusRule.enabled|Enable this if you wish to configure prometheusRule.* parameters bellow. Keeping this disabled will ignore all the prometheusRule.* parameters |boolean|False|
 |prometheusRule.namespace|Namespace for the PrometheusRule Resource|string|“ “|
 |prometheusRule.additionalLabels|Additional labels that can be used so PrometheusRule will be discovered by Prometheus|string|{}|
 |securityContext.runAsUser|Set NGINX Exporter container's Security Context runAsUser|integer|1001|
+|serviceMonitor.namespace|Namespace in which Prometheus is running|string|“ “|
 |serviceMonitor.namespace|Namespace in which Prometheus is running|string|“ “|
 |serviceMonitor.interval|Interval at which metrics should be scraped|string|“ “|
 |serviceMonitor.scrapeTimeout|Timeout after which the scrape is ended|string|“ “|
