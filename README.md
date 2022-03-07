@@ -1,5 +1,22 @@
-# carvel
-Nginx Package 
+# Nginx Package 
+
+NGINX Open Source is a web server that can be also used as a reverse proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due to its ability to provide faster content.
+
+## Supported Providers
+
+The following tables shows the providers this package can work with.
+
+| AWS  |  Azure  | vSphere  | Docker |
+|:---:|:---:|:---:|:---:|
+| ✅  |  ✅  | ✅  | ✅  |
+
+## Components
+
+* TBD
+
+## Configuration Reference
+
+You can configure the following:
 
 NGINX parameters
 |Parameter|Description|Type|Default|
