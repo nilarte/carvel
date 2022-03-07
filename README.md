@@ -13,7 +13,7 @@ You can configure the following:
 |debug|Set to true if you would like to see extra information on logs|string|false|
 
 
-**NGINX deployment parameters**
+#### NGINX deployment parameters
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
 |Replicas|Number of NGINX replicas to deploy|integer|1|
@@ -37,7 +37,7 @@ You can configure the following:
 |podSecurityContext.fsGroup|Set NGINX pod's Security Context fsGroup|integer|1001|
 
 
-**Traffic Exposure parameters**
+#### Traffic Exposure parameters
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
 |containerPorts.http|Sets http port inside NGINX  container|integer|8080|
@@ -54,7 +54,7 @@ You can configure the following:
 |ingress.tls|Create TLS Secret|string|false|
 
 
-**Metrics parameters**
+#### Metrics parameters
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
 |metrics.port|NGINX Container Status Port scraped by Prometheus Exporter|string|“ “|
