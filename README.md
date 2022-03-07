@@ -58,11 +58,11 @@ You can configure the following:
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
 |metrics.port|NGINX Container Status Port scraped by Prometheus Exporter|string|“ “|
-|prometheusRule.enabled|Enable this if you wish to configure prometheusRule.* parameters bellow. Keeping this disabled will ignore all the prometheusRule.* parameters |boolean|False|
+|**prometheusRule.enabled**|Enable this if you wish to configure prometheusRule.* parameters bellow. Keeping this disabled will ignore all the prometheusRule.* parameters |boolean|False|
 |prometheusRule.namespace|Namespace for the PrometheusRule Resource|string|“ “|
 |prometheusRule.additionalLabels|Additional labels that can be used so PrometheusRule will be discovered by Prometheus|string|{}|
 |securityContext.runAsUser|Set NGINX Exporter container's Security Context runAsUser|integer|1001|
-|serviceMonitor.namespace|Namespace in which Prometheus is running|string|“ “|
+|**serviceMonitor.enabled**|Enable this if you wish to configure serviceMonitor.* parameters bellow. Keeping this disabled will ignore all the serviceMonitor.* parameters |boolean|False|
 |serviceMonitor.namespace|Namespace in which Prometheus is running|string|“ “|
 |serviceMonitor.interval|Interval at which metrics should be scraped|string|“ “|
 |serviceMonitor.scrapeTimeout|Timeout after which the scrape is ended|string|“ “|
