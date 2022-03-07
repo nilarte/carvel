@@ -6,7 +6,7 @@ NGINX Open Source is a web server that can be also used as a reverse proxy, load
 
 You can configure the following:
 
-### NGINX parameters
+#### NGINX parameters
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
 |pullPolicy|NGINX image pull policy|string|IfNotPresent|
