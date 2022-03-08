@@ -13,7 +13,6 @@ You can configure the following:
 |pullPolicy|NGINX image pull policy|string|IfNotPresent|
 |debug|Set to true if you would like to see extra information on logs|string|false|
 
-
 ### NGINX deployment parameters
 
 |Parameter|Description|Type|Default|
@@ -38,7 +37,6 @@ You can configure the following:
 |automountServiceAccountToken|Auto-mount the service account token in the pod|string|false|
 |podSecurityContext.fsGroup|Set NGINX pod's Security Context fsGroup|integer|1001|
 
-
 ### Traffic Exposure parameters
 
 |Parameter|Description|Type|Default|
@@ -56,17 +54,16 @@ You can configure the following:
 |ingress.annotations|Additional annotations for the Ingress resource. To enable certificate autogeneration, place here your cert-manager annotations|string|{}|
 |ingress.tls|Create TLS Secret|string|false|
 
-
 ### Metrics parameters
 
 |Parameter|Description|Type|Default|
 |---------|-----------|----|-------|
 |metrics.port|NGINX Container Status Port scraped by Prometheus Exporter|string|“ “|
 |securityContext.runAsUser|Set NGINX Exporter container's Security Context runAsUser|integer|1001|
-|**prometheusRule.enabled**|Enable this if you wish to configure prometheusRule.* parameters bellow. Keeping this disabled will ignore all the prometheusRule.* parameters |boolean|False|
+|**prometheusRule.enabled**|Enable this if you wish to configure prometheusRule.\* parameters bellow. Keeping this disabled will ignore all the prometheusRule.\* parameters |boolean|False|
 |prometheusRule.namespace|Namespace for the PrometheusRule Resource|string|“ “|
 |prometheusRule.additionalLabels|Additional labels that can be used so PrometheusRule will be discovered by Prometheus|string|{}|
-|**serviceMonitor.enabled**|Enable this if you wish to configure serviceMonitor.* parameters bellow. Keeping this disabled will ignore all the serviceMonitor.* parameters |boolean|False|
+|**serviceMonitor.enabled**|Enable this if you wish to configure serviceMonitor.\* parameters bellow. Keeping this disabled will ignore all the serviceMonitor.\* parameters |boolean|False|
 |serviceMonitor.namespace|Namespace in which Prometheus is running|string|“ “|
 |serviceMonitor.interval|Interval at which metrics should be scraped|string|“ “|
 |serviceMonitor.scrapeTimeout|Timeout after which the scrape is ended|string|“ “|
